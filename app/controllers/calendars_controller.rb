@@ -47,6 +47,7 @@ class CalendarsController < ApplicationController
       end
       days = { month: (@todays_date + x).month, date: (@todays_date+x).day, day: wdays[wday_num], :plans => today_plans}
       wday_num += 1
+
       @week_days.push(days)
     end
 
